@@ -1,0 +1,350 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Comforter&family=Neonderthaw&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="icon" href="data:image/jpeg;base64,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"
+        type="image/gif" sizes="16x16">
+
+
+    <title>ارگانیک</title>
+</head>
+
+<body>
+    <div id="top"></div>
+    <a href="#top" style=" position: fixed; top: o; left: 0; color: black; ">back to top</a>
+    <nav class="navbar navbar-expand-lg ">
+        <div class="container ">
+            <a class="navbar-brand" href="#">ارگانیک</a>
+            <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#trending">برتر</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#store">مغازه</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#organic">طبیعی/سلامتی/طبیعت</a>
+                    </li>
+
+                    </li>
+                    <div class="px-5"></div>
+                    <form class="d-flex justify-content-end px-5">
+                        <input type="search " class="px-4 mb-2 search " placeholder="جستجو " aria-label="search ">
+                        <button class="btnsearch" ype="submit " class="btn0 ">جستجو</button>
+
+                    </form>
+
+                </ul>
+
+
+            </div>
+
+        </div>
+    </nav>
+    <section class="main text-center">
+        <div class="py-5"></div>
+        <div class="py-5"></div>
+        <div class="py-3"></div>
+        <div class="py-5 px-5 container
+        ">
+            <h1 style="font-weight: 900; " class="text-lg-start">طبیعت همیشه مواظب ما بوده است!!!</h1>
+            <button class="btn1 mt-3 ">نکته های دیگر</button>
+        </div>
+
+
+
+    </section>
+    <section class="new ">
+        <div class="container pt-5 ">
+            <div class="row py-5 ">
+                <div class="col-lg-7 m-auto ">
+                    <div class="row ">
+                        <div class="col-lg-4 ">
+                            <img src="https://www.eatme.eu/media/s5zh1rna/mango-eat-me-nl.jpg?anchor=center&mode=crop&width=560&height=560&rnd=132624432859800000 " class="img-fluid " alt=" ">
+                            <h6 class="text-center ">طبیعی</h6>
+                        </div>
+
+                        <div class="col-lg-4 " id="organic">
+                            <img src="https://www.dandreaproduce.com/wp-content/uploads/2018/11/red-sedless-grapes-560x560.jpg " class="img-fluid " alt=" ">
+                            <h6 class="text-center ">ارگانیک</h6>
+
+                        </div>
+                        <div class="col-lg-4 ">
+                            <img src="https://www.eatme.eu/media/s5zh1rna/mango-eat-me-nl.jpg?anchor=center&mode=crop&width=560&height=560&rnd=132624432859800000 " class="img-fluid " alt=" ">
+                            <h6 class="text-center ">سلامتی</h6>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <section class="product ">
+        <div class="container py-5 ">
+            <div class="row py-5 ">
+                <div class="col-lg-5 m-auto text-center ">
+                    <h1 id="trending">برترین ها</h1>
+                    <h6 style="color: red; ">مصرف کننده غذاهای ارگانیک باشید!!</h6>
+                </div>
+            </div>
+            <div class="row justify-content-lg-around justify-content-center d-flex ">
+                <div class="card bdt m-1 m-sm-0 " style="width: 18rem; ">
+                    <img class="card-img-top " src="https://www.eatme.eu/media/s5zh1rna/mango-eat-me-nl.jpg?anchor=center&mode=crop&width=560&height=560&rnd=132624432859800000 " alt=" ">
+                    <div class="card-body text-center ">
+                        <p class="card-text "><strike style="color: red; ">39.99تومان</strike> </p>
+                        <p style="color: green; ">20تومان</p>
+                        <button class="btn btn-lg alert-success btntest ">خرید</button>
+                    </div>
+                </div>
+                <div class="card bdt m-1 m-sm-0 " style="width: 18rem; ">
+                    <img class="card-img-top " src="https://cf.shopee.ph/file/16f36ad5151c768dfa4ab93a7e801044 " alt=" ">
+                    <div class="card-body text-center ">
+                        <p class="card-text "><strike style="color: red; ">39.99تومان</strike> </p>
+                        <p style="color: green; ">20تومان</p>
+                        <button class="btn btn-lg alert-success btntest ">خرید</button>
+                    </div>
+                </div>
+                <div class="card bdt " style="width: 18rem; ">
+                    <img class="card-img-top " src="https://www.eatme.eu/media/s5zh1rna/mango-eat-me-nl.jpg?anchor=center&mode=crop&width=560&height=560&rnd=132624432859800000 " alt=" ">
+                    <div class="card-body text-center ">
+                        <p class="card-text "><strike style="color: red; ">39.99تومان</strike> </p>
+                        <p style="color: green; ">20تومان</p>
+                        <button class="btn btn-lg alert-success btntest ">خرید</button>
+                    </div>
+                </div>
+                <div class="m-5 "></div>
+                <div id=" " id="one " class="hello btn bg-danger col-lg-3 ">کالاهای بیشتر</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about ">
+        <div class="container py-5 ">
+            <div class="row py-5 ">
+                <div class="col-lg-8 m-auto ">
+                    <h1 class="mb-4 text-center " style="font-weight: 700; ">به دنیای غداهای ارگانیک خوش آمدید</h1>
+                    <h5 class="text-center " style="color:red; ">مصرف کننده غداهای ارگانیک باشید</h5>
+                </div>
+            </div>
+            <div class="row p-5 ">
+                <div class="col-lg-4 ">
+                    <img height="560px " width="560px " src="https://previews.123rf.com/images/dolgachov/dolgachov1302/dolgachov130200278/17796603-sch%C3%B6ne-frau-mit-gesunden-lebensmitteln-und-wasser.jpg " class="img-fluid mb-3 " alt=" ">
+                    <h5>مفید برای قلب</h5>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita, tempore unde culpa, fuga, itaque perspiciatis minus odio nesciunt sint doloribus nulla provident! Illum tempora vitae aut ullam iure, reiciendis atque!</p>
+                </div>
+                <div class="col-lg-4 ">
+                    <img height="560 " width="560 " src="https://previews.123rf.com/images/dolgachov/dolgachov1302/dolgachov130200278/17796603-sch%C3%B6ne-frau-mit-gesunden-lebensmitteln-und-wasser.jpg " class="img-fluid mb-3 " alt=" ">
+                    <h5>مفید برای مغز</h5>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita, tempore unde culpa, fuga, itaque perspiciatis minus odio nesciunt sint doloribus nulla provident! Illum tempora vitae aut ullam iure, reiciendis atque!</p>
+                </div>
+                <div class="col-lg-4 ">
+                    <img height="560 " width="560 " src="https://previews.123rf.com/images/dolgachov/dolgachov1302/dolgachov130200278/17796603-sch%C3%B6ne-frau-mit-gesunden-lebensmitteln-und-wasser.jpg " class="img-fluid mb-3 " alt=" ">
+                    <h5>مرغوب ترین محصولات</h5>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita, tempore unde culpa, fuga, itaque perspiciatis minus odio nesciunt sint doloribus nulla provident! Illum tempora vitae aut ullam iure, reiciendis atque!</p>
+                </div>
+                <div class="m-3 "></div>
+                <div id=" " id="one " class="hello btn bg-danger col-lg-3 m-auto ">خرید بیشتر</div>
+            </div>
+        </div>
+
+        </div>
+    </section>
+    <section class="shop " id="store">
+        <div class="container ">
+            <div class="row py-5 ">
+                <div class="col-lg-8 m-auto text-center ">
+                    <h4 class="card-title ">سپاس از حسن انتخاب شما!!!</h4>
+
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-lg-around justify-content-center d-flex ">
+            <div class="card bdt m-1 m-sm-0 " style="width: 18rem; ">
+                <img class="card-img-top " src="https://www.eatme.eu/media/s5zh1rna/mango-eat-me-nl.jpg?anchor=center&mode=crop&width=560&height=560&rnd=132624432859800000 " alt=" ">
+                <div class="card-body text-center ">
+                    <h4 class="card-title ">غدای انرژی زا</h4>
+                    <p class="card-text "><strike style="color: red; ">39.99تومان</strike> </p>
+                    <p style="color: green; ">20تومان</p>
+                    <button class="btn btn-lg alert-success btntest ">خرید</button>
+                </div>
+            </div>
+            <div class="card bdt m-1 m-sm-0 " style="width: 18rem; ">
+                <img class="card-img-top " src="https://cf.shopee.ph/file/16f36ad5151c768dfa4ab93a7e801044 " alt=" ">
+                <div class="card-body text-center ">
+                    <h4 class="card-title ">غدای انرژی زا</h4>
+                    <p class="card-text "><strike style="color: red; ">39.99تومان</strike> </p>
+                    <p style="color: green; ">20تومان</p>
+                    <button class="btn btn-lg alert-success btntest ">خرید</button>
+                </div>
+            </div>
+            <div class="card bdt " style="width: 18rem; ">
+                <img class="card-img-top " src="https://www.eatme.eu/media/s5zh1rna/mango-eat-me-nl.jpg?anchor=center&mode=crop&width=560&height=560&rnd=132624432859800000 " alt=" ">
+                <div class="card-body text-center ">
+                    <h4 class="card-title ">غدای انرژی زا</h4>
+                    <p class="card-text "><strike style="color: red; ">39.99تومان</strike> </p>
+                    <p style="color: green; ">20تومان</p>
+                    <button class="btn btn-lg alert-success btntest ">خرید</button>
+                </div>
+            </div>
+
+        </div>
+        </div>
+        <div class="m-5 "></div>
+        <div class="row justify-content-lg-around justify-content-center d-flex ">
+            <div class="card bdt m-1 m-sm-0 " style="width: 18rem; ">
+                <img class="card-img-top " src="https://www.eatme.eu/media/s5zh1rna/mango-eat-me-nl.jpg?anchor=center&mode=crop&width=560&height=560&rnd=132624432859800000 " alt=" ">
+                <div class="card-body text-center ">
+                    <h4 class="card-title ">غدای انرژی زا</h4>
+                    <p class="card-text "><strike style="color: red; ">39.99تومان</strike> </p>
+                    <p style="color: green; ">20تومان</p>
+                    <button id="buy()" class="btn btn-lg alert-success btntest ">خرید</button>
+                </div>
+            </div>
+            <div class="card bdt m-1 m-sm-0 " style="width: 18rem; ">
+                <img class="card-img-top " src="https://cf.shopee.ph/file/16f36ad5151c768dfa4ab93a7e801044 " alt=" ">
+                <div class="card-body text-center ">
+                    <h4 class="card-title ">غدای انرژی زا</h4>
+                    <p class="card-text "><strike style="color: red; ">39.99تومان</strike> </p>
+                    <p style="color: green; ">20تومان</p>
+                    <button class="btn btn-lg alert-success btntest ">خرید</button>
+                </div>
+            </div>
+
+            <div class="card bdt " style="width: 18rem; ">
+                <img class="card-img-top " src="https://www.eatme.eu/media/s5zh1rna/mango-eat-me-nl.jpg?anchor=center&mode=crop&width=560&height=560&rnd=132624432859800000 " alt=" ">
+                <div class="card-body text-center ">
+                    <h4 class="card-title ">غدای انرژی زا</h4>
+                    <p class="card-text "><strike style="color: red; ">39.99تومان</strike> </p>
+                    <p style="color: green; ">20تومان</p>
+                    <button class="btn btn-lg alert-success btntest ">خرید</button>
+                </div>
+            </div>
+            <div class="m-5 "></div>
+
+        </div>
+        <div class="row justify-content-lg-around justify-content-center d-flex ">
+            <div class="card bdt m-1 m-sm-0 " style="width: 18rem; ">
+                <img class="card-img-top " src="https://www.eatme.eu/media/s5zh1rna/mango-eat-me-nl.jpg?anchor=center&mode=crop&width=560&height=560&rnd=132624432859800000 " alt=" ">
+                <div class="card-body text-center ">
+                    <h4 class="card-title ">غدای انرژی زا</h4>
+                    <p class="card-text "><strike style="color: red; ">39.99تومان</strike> </p>
+                    <p style="color: green; ">20تومان</p>
+                    <button class="btn btn-lg alert-success btntest ">خرید</button>
+                </div>
+            </div>
+            <div class="card bdt m-1 m-sm-0 " style="width: 18rem; ">
+                <img class="card-img-top " src="https://cf.shopee.ph/file/16f36ad5151c768dfa4ab93a7e801044 " alt=" ">
+                <div class="card-body text-center ">
+                    <h4 class="card-title ">غدای انرژی زا</h4>
+                    <p class="card-text "><strike style="color: red; ">39.99تومان</strike> </p>
+                    <p style="color: green; ">20تومان</p>
+                    <button id="buy" class="btn btn-lg alert-success btntest ">خرید</button>
+
+                </div>
+            </div>
+            <div class="card bdt " style="width: 18rem; ">
+                <img class="card-img-top " src="https://www.eatme.eu/media/s5zh1rna/mango-eat-me-nl.jpg?anchor=center&mode=crop&width=560&height=560&rnd=132624432859800000 " alt=" ">
+                <div class="card-body text-center ">
+                    <h4 class="card-title ">غدای انرژی زا</h4>
+                    <p class="card-text "><strike style="color: red; ">39.99تومان</strike> </p>
+                    <p style="color: green; ">20تومان</p>
+                    <button class="btn btn-lg alert-success btntest ">خرید</button>
+                </div>
+            </div>
+            <div class="m-5 "></div>
+
+        </div>
+        </div>
+
+
+    </section>
+    <section class="apple  ">
+        <div class="container-fluid py-5 d-flex justify-content-end ">
+            <div class="m-5 "></div>
+            <div class="row ">
+                <div class="m-5 "></div>
+                <div class="m-3 "></div>
+                <div class="col-lg-6 m-auto text-center ">
+                    <h1 style="font-weight: 800; color: blue; " class="py-4 ">روزی یک سیب دکتر رو دور نگه می داره!!!</h1>
+                    <h6 " style="color:red;font-weight: 900; font-family: Arial, Helvetica, sans-serif; "> مصرف کننده غداهای ارگانیک باشید!!!</h6>
+                <button class="btn1 mt-3 " style="font-family: 'Courier New', Courier, monospace; ">بیشتر درباره ما</button>
+                <div id=" contact "></div>
+
+        </div>
+        </div>
+        </div>
+
+
+        </section>
+
+
+        <div class="m-5 "></div>
+
+        <section class="contact ">
+
+<div class="m-5 "></div>
+            
+
+            <h1 class="text-center mt-5 ">با ما تماس بگیرید!!!</h1>
+
+           
+            <div class="container d-block w-100 ">
+
+
+
+
+
+
+            </div>
+            <div class="m-5 ">
+
+            </div>
+            <div class="row ">
+                <div class="col-lg-9 ">
+                    <div class="row container ">
+                        <div class="col-lg-4 ">
+                            <h6 id="hello ">آدرس</h6>
+                            <p>45متری انصاریه.....</p>
+                        </div>
+                        <div class="col-lg-4 ">
+
+                            <h6>شماره موبایل</h6>
+                            <p>09330488532</p>
+                        </div>
+                        <div class="col-4 ">
+                            <h6>ایمیل</h6>
+                            <p>hajavipouria11@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+
+
+        </section>
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js " integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p " crossorigin="anonymous "></script>
+
+<script src="main.js "></script>
+</body>
+
+</html>
